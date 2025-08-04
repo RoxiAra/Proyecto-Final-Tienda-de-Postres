@@ -1,5 +1,12 @@
+import { Layout } from "../components/Layout"
+
+
 const Home = () => {
-  return <h1>Hola desde home</h1>
+  return (
+    <Layout>
+      <h2>Hola desde Home</h2>
+    </Layout>
+  )
 }
 
 export { Home }
