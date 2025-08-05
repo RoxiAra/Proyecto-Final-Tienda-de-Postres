@@ -4,68 +4,86 @@ import { Products } from "../components/Products";
 
 const products = [
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Galleta Red VelVet",
-    descripcion: "Suave, esponjosa y con un delicado sabor a cacao, esta galleta red velvet combina lo mejor de una masa aterciopelada con un corazón dulce y ligeramente ácido.",
-    precio: 1500,
+  title: "Galleta Red Velvet",
+  price: 1500,
+  description: "Suave, esponjosa y con un delicado sabor a cacao, esta galleta red velvet combina lo mejor de una masa aterciopelada con un corazón dulce y ligeramente ácido.",
+  category: "galletas",
+  image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Galleta Clasica",
-    descripcion: "Clásica, crocante por fuera y suave por dentro, cargada de chips de chocolate semiamargo que se derriten en cada bocado.",
-    precio: 1300,
+    title: "Galleta Clasica",
+    price: 1300,
+    description: "Clásica, crocante por fuera y suave por dentro, cargada de chips de chocolate semiamargo que se derriten en cada bocado.",
+    category: "galleta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Galleta Frambi",
-    descripcion: "Una combinación irresistible: masa suave, trozos de chocolate blanco y el toque ácido y fresco de frambuesas naturales.",
-    precio: 1500,
+    title: "Galleta Frambi",
+    price: 1500,
+    description: "Una combinación irresistible: masa suave, trozos de chocolate blanco y el toque ácido y fresco de frambuesas naturales.",
+    category: "galleta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Lemon Pie",
-    descripcion: "Base crocante, relleno cremoso de limón y un copete de merengue italiano dorado. Equilibrio perfecto entre lo dulce y lo cítrico.",
-    precio: 7000,
+    title: "Lemon Pie",
+    price: 7000,
+    description: "Base crocante, relleno cremoso de limón y un copete de merengue italiano dorado. Equilibrio perfecto entre lo dulce y lo cítrico.",
+    category: "tarta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Appel Crumble",
-    descripcion: "Manzanas especiadas sobre masa artesanal, cubierta con crumble crocante de avena y azúcar rubia. Ideal para acompañar con helado.",
-    precio: 6000,
+    title: "Appel Crumble",
+    price: 6000,
+    description: "Manzanas especiadas sobre masa artesanal, cubierta con crumble crocante de avena y azúcar rubia. Ideal para acompañar con helado.",
+    category: "tarta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
+    title: "Cabsha",
+    price: 6000,
+    description: "Inspirada en el bombón clásico: base de chocolate, corazón de dulce de leche y una cobertura de ganache suave. Intensamente tentadora.",
+    category: "tarta",
     img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Cabsha",
-    descripcion: "Inspirada en el bombón clásico: base de chocolate, corazón de dulce de leche y una cobertura de ganache suave. Intensamente tentadora.",
-    precio: 6000,
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Marquise",
-    descripcion: "Brownie húmedo de chocolate, cubierto con una capa de dulce de leche, crema batida y frutillas frescas. Un postre para compartir (o no).",
-    precio: 9000,
+    title: "Marquise",
+    price: 9000,
+    description: "Brownie húmedo de chocolate, cubierto con una capa de dulce de leche, crema batida y frutillas frescas. Un postre para compartir (o no).",
+    category: "torta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Carrot Cake",
-    descripcion: "Bizcocho húmedo de zanahoria con nueces, especias y una suave ganache de chocolate blanco. Clásico, reconfortante y lleno de sabor.",
-    precio: 10000,
+    title: "Carrot Cake",
+    price: 10000,
+    description: "Bizcocho húmedo de zanahoria con nueces, especias y una suave ganache de chocolate blanco. Clásico, reconfortante y lleno de sabor.",
+    category: "torta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Cheesecake de Frutos Rojos",
-    descripcion: "Cremoso, suave y con base de galleta crocante. Podés acompañarlo con salsa de frutos rojos o disfrutarlo al natural.",
-    precio: 12000,
+    title: "Cheesecake de Frutos Rojos",
+    price: 12000,
+    description: "Cremoso, suave y con base de galleta crocante. Podés acompañarlo con salsa de frutos rojos o disfrutarlo al natural.",
+    category: "torta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    nombre: "Tiramisu",
-    descripcion: "Postre italiano hecho con capas de vainillas humedecido en café, crema de mascarpone y un toque de cacao amargo. Delicado y elegante.",
-    precio: 15000,
+    title: "Tiramisu",
+    price: 15000,
+    description: "Postre italiano hecho con capas de vainillas humedecido en café, crema de mascarpone y un toque de cacao amargo. Delicado y elegante.",
+    category: "torta",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   }
 ]
 
 const Home = () => {
+
+  const fetchingProducts = async () => {
+    const response = await fetch("https://fakestoreapi.com/products", { method: "POST" })
+    console.log(response)
+
+    fetchingProducts()
+  }
+
   return (
     <Layout>
       {/* Presentación de la tienda */}

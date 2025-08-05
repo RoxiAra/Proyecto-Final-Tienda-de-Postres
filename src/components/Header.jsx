@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <header>
-      <img src="" alt="" />
+      <img src="https://img.freepik.com/vector-premium/banners-pizarra-pasteleria-postre-pastel_8071-31398.jpg" alt="banner de la tienda" />
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>

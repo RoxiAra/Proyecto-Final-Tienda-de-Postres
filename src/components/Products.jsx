@@ -1,12 +1,14 @@
 const Products = (props) => {
-  const { img, nombre, precio, descripcion = "No tiene descripcion" } = props.product;
+  const { title, price, description, image = "No tiene descripcion" } = props.product;
 
   return (
     <div className="product">
-      <img src={img} alt={nombre} />
-      <h3>{nombre}</h3>
-      <p>Descripcion: {descripcion}</p>
-      <p>Precio P/U: ${precio}</p>
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>Descripcion: {description}</p>
+      <p>Precio P/U: ${price}</p>
+      <button>Actualizar</button>
+      <button>Borrar</button>
     </div>
   )
 }
