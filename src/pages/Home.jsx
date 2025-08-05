@@ -4,72 +4,82 @@ import { Products } from "../components/Products";
 
 const products = [
   {
-  title: "Galleta Red Velvet",
-  price: 1500,
-  description: "Suave, esponjosa y con un delicado sabor a cacao, esta galleta red velvet combina lo mejor de una masa aterciopelada con un corazón dulce y ligeramente ácido.",
-  category: "galletas",
-  image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    id: 1,
+    title: "Galleta Red Velvet",
+    price: 1500,
+    description: "Suave, esponjosa y con un delicado sabor a cacao...",
+    category: "galletas",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 2,
     title: "Galleta Clasica",
     price: 1300,
-    description: "Clásica, crocante por fuera y suave por dentro, cargada de chips de chocolate semiamargo que se derriten en cada bocado.",
+    description: "Clásica, crocante por fuera y suave por dentro...",
     category: "galleta",
-    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 3,
     title: "Galleta Frambi",
     price: 1500,
-    description: "Una combinación irresistible: masa suave, trozos de chocolate blanco y el toque ácido y fresco de frambuesas naturales.",
+    description: "Masa suave, chocolate blanco y frambuesas...",
     category: "galleta",
-    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 4,
     title: "Lemon Pie",
     price: 7000,
-    description: "Base crocante, relleno cremoso de limón y un copete de merengue italiano dorado. Equilibrio perfecto entre lo dulce y lo cítrico.",
+    description: "Base crocante, relleno de limón y merengue...",
     category: "tarta",
-    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 5,
     title: "Appel Crumble",
     price: 6000,
-    description: "Manzanas especiadas sobre masa artesanal, cubierta con crumble crocante de avena y azúcar rubia. Ideal para acompañar con helado.",
+    description: "Manzanas especiadas con crumble crocante...",
     category: "tarta",
-    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 6,
     title: "Cabsha",
     price: 6000,
-    description: "Inspirada en el bombón clásico: base de chocolate, corazón de dulce de leche y una cobertura de ganache suave. Intensamente tentadora.",
+    description: "Base de chocolate, dulce de leche y ganache...",
     category: "tarta",
-    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 7,
     title: "Marquise",
     price: 9000,
-    description: "Brownie húmedo de chocolate, cubierto con una capa de dulce de leche, crema batida y frutillas frescas. Un postre para compartir (o no).",
+    description: "Brownie húmedo, dulce de leche y frutillas...",
     category: "torta",
     image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 8,
     title: "Carrot Cake",
     price: 10000,
-    description: "Bizcocho húmedo de zanahoria con nueces, especias y una suave ganache de chocolate blanco. Clásico, reconfortante y lleno de sabor.",
+    description: "Bizcocho de zanahoria con ganache de chocolate blanco...",
     category: "torta",
     image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 9,
     title: "Cheesecake de Frutos Rojos",
     price: 12000,
-    description: "Cremoso, suave y con base de galleta crocante. Podés acompañarlo con salsa de frutos rojos o disfrutarlo al natural.",
+    description: "Cremoso con base de galleta crocante y frutos rojos...",
     category: "torta",
     image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: 10,
     title: "Tiramisu",
     price: 15000,
-    description: "Postre italiano hecho con capas de vainillas humedecido en café, crema de mascarpone y un toque de cacao amargo. Delicado y elegante.",
+    description: "Vainillas con café, mascarpone y cacao amargo...",
     category: "torta",
     image: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   }
@@ -140,7 +150,9 @@ const Home = () => {
         </p>
         <div>
           {
-            products.map((products) => <Products products={products} />)
+            products.map(product => (
+            <Products key={product.id} products={product} />
+            ))
           }
         </div>
       </section>
