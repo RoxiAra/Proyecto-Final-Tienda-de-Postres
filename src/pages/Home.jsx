@@ -1,4 +1,69 @@
 import { Layout } from "../components/Layout";
+import { Products } from "../components/Products";
+
+
+const products = [
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Galleta Red VelVet",
+    descripcion: "Suave, esponjosa y con un delicado sabor a cacao, esta galleta red velvet combina lo mejor de una masa aterciopelada con un corazón dulce y ligeramente ácido.",
+    precio: 1500,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Galleta Clasica",
+    descripcion: "Clásica, crocante por fuera y suave por dentro, cargada de chips de chocolate semiamargo que se derriten en cada bocado.",
+    precio: 1300,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Galleta Frambi",
+    descripcion: "Una combinación irresistible: masa suave, trozos de chocolate blanco y el toque ácido y fresco de frambuesas naturales.",
+    precio: 1500,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Lemon Pie",
+    descripcion: "Base crocante, relleno cremoso de limón y un copete de merengue italiano dorado. Equilibrio perfecto entre lo dulce y lo cítrico.",
+    precio: 7000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Appel Crumble",
+    descripcion: "Manzanas especiadas sobre masa artesanal, cubierta con crumble crocante de avena y azúcar rubia. Ideal para acompañar con helado.",
+    precio: 6000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Cabsha",
+    descripcion: "Inspirada en el bombón clásico: base de chocolate, corazón de dulce de leche y una cobertura de ganache suave. Intensamente tentadora.",
+    precio: 6000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Marquise",
+    descripcion: "Brownie húmedo de chocolate, cubierto con una capa de dulce de leche, crema batida y frutillas frescas. Un postre para compartir (o no).",
+    precio: 9000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Carrot Cake",
+    descripcion: "Bizcocho húmedo de zanahoria con nueces, especias y una suave ganache de chocolate blanco. Clásico, reconfortante y lleno de sabor.",
+    precio: 10000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Cheesecake de Frutos Rojos",
+    descripcion: "Cremoso, suave y con base de galleta crocante. Podés acompañarlo con salsa de frutos rojos o disfrutarlo al natural.",
+    precio: 12000,
+  },
+  {
+    img: "https://tse1.mm.bing.net/th/id/OIP.lvTzW2PkyNh0vsgU92LYGgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    nombre: "Tiramisu",
+    descripcion: "Postre italiano hecho con capas de vainillas humedecido en café, crema de mascarpone y un toque de cacao amargo. Delicado y elegante.",
+    precio: 15000,
+  }
+]
 
 const Home = () => {
   return (
@@ -49,14 +114,18 @@ const Home = () => {
       </section>
 
       {/* Sección reservada para productos dinámicos */}
-      <section>
+      <section className="products-section">
         <h2>Nuestra carta de postres</h2>
         <p>
           Estas son todas las delicias que tenemos disponibles actualmente. Podés mirar, elegir y hacer tu
           pedido directamente desde esta página.
         </p>
         <div>
-          [ Aquí se mostrará la lista de productos ]
+          {
+            products.map((product) =>
+              <Products
+              product={product} />)
+          }
         </div>
       </section>
 
