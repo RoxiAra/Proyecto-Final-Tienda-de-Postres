@@ -140,9 +140,7 @@ const Home = () => {
         </p>
         <div>
           {
-            products.map((product) =>
-              <Products
-              product={product} />)
+            products.map((products) => <Products products={products} />)
           }
         </div>
       </section>
