@@ -1,6 +1,8 @@
 const Footer = () => {
   return (
-    <h2>Footer</h2>
+    <footer>
+      <p>Sitio desarrllado por <a href="https://www.linkedin.com/in/rocío-mikaela-aramayo/" target="_blank">Rocío Aramayo</a></p>
+    </footer>
   )
 }
 
